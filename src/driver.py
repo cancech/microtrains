@@ -15,11 +15,14 @@ class Driver:
 
     def start(self):
         if not bool(self._tasks):
-            raise Exception("Cannot start driver if it has not tasks registered")
+            raise Exception("Cannot start driver if it has no tasks registered")
         
         self._timings = list(self._tasks.keys())
         self._timings.sort()
         
+        
+        # Some kind of output is required for VS Code/pico-w-go to connect and control the execution
+        print('Driver starting...')
         while True:
             # Wait to trigger the next task(s)
             nextTaskTime = self._timings[self._index]
