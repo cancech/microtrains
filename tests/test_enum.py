@@ -1,5 +1,5 @@
 import unittest
-import src.enum as enum
+import common.enum as enum
 
 class TestEnum(unittest.TestCase):
     def testEnnum(self):

@@ -1,6 +1,6 @@
-from driver import instance as driver
+from common.driver import instance as driver
 from machine import Pin
-import src.enum as enum
+import common.enum as enum
 
 '''
 Provides controls for all of the lights (LEDs) that belond to a given traffic light.

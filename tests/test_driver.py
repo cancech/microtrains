@@ -1,7 +1,7 @@
 import unittest
 import mocks.mock_micropython
 import mocks.micropython.mock_utime as mu
-import src.driver as driver
+import common.driver as driver
 
 class TestDriver(unittest.TestCase):
 

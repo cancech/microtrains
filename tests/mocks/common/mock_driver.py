@@ -1,4 +1,4 @@
-import driver
+import common.driver as driver
 
 class MockDriver(driver.Driver):
 

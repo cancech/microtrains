@@ -1,5 +1,5 @@
-from trafficlight import IntersectionBuilder
-import trafficlight
+from lights.trafficlight import IntersectionBuilder
+import lights.trafficlight as trafficlight
 
 builder = IntersectionBuilder(IntersectionBuilder.TYPE.RED_REDYELLOW_GREEN_YELLOW, 1)
 builder.addTrafficLight(0, 1, 2, 1)

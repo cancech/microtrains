@@ -1,10 +1,10 @@
 import unittest
 import mocks.mock_micropython
 import mocks.micropython.mock_machine as mm
-import driver
-import mocks.mock_driver as md
+import common.driver
+import mocks.common.mock_driver as md
 
-import trafficlight as tl
+import lights.trafficlight as tl
 
 class TestTrafficLight(unittest.TestCase):
 
@@ -159,7 +159,7 @@ class IntersectionBuilderTest(unittest.TestCase):
         builder.addTrafficLight(1, 2, 3, 1)
         builder.addTrafficLight(4, 5, 6, 2)
         builder.build()
-        md.assertNumTasksRegistered(12)
+        md.assertNumTasksRegistered(16)
         traffic1 = builder._trafficLight[0]
         traffic2 = builder._trafficLight[1]
 
