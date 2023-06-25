@@ -6,6 +6,6 @@ Micropython library dedicated to providing capabilities that can be run on a Ras
 
 Divided into modules, with each module containing a single aspect of the functionality. Existing modules and their capabilities are as follows.
 
-* *common* - contains shared and common functionality, which is not specific to any concrete capability, but rather shared among
-* *lights* - contains capabilities relating to controlling and managing various lights via GPIO pins
+* *[common](common)* - contains shared and common functionality, which is not specific to any concrete capability, but rather shared among
+* *[lights](lights)* - contains capabilities relating to controlling and managing various lights via GPIO pins
 * *tests* - contains unit tests for verifying the functionality of what is within each module
